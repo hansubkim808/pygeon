@@ -1,5 +1,4 @@
-# pygeon
-Python-based Automation Toolkit for Rappers, Producers, and Sound Engineers 
+# pygeon - Python-based Automation Toolkit for Rappers, Producers, and Sound Engineers 
 
 The most difficult thing to stick to when growing your bootstrapped music brand, rap career, or production career is **consistency.** 
 
