@@ -1,0 +1,1 @@
+ffmpeg -r 1 loop 1 -i test_image.jpg -i test_audio.mp3 -acodec copy -r 1 -shortest -vf scale=1900:1200 test_video.mp4
