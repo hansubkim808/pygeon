@@ -7,8 +7,8 @@ def uploadToDrive(file_vec):
     g_login.LocalWebserverAuth()
     drive = GoogleDrive(g_login)
 
-    for mp3_file in file_vec.split():
-        print(file_vec.split())
+    for mp3_file in file_vec.split(","):
+        print(file_vec.split(","))
         try:
             with open(mp3_file, 'rb') as outfile: 
                 print("Uploading {} to Google Drive...".format(os.path.basename(outfile.name)))
@@ -24,7 +24,7 @@ def uploadToDrive(file_vec):
 def main():
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("-f", "--filenames", help="Space-delimited list of files to upload to Drive.")
+    parser.add_argument("-f", "--filenames", help="Comma-delimited list of files to upload to Drive.")
     args = parser.parse_args()
     uploadToDrive(file_vec=args.filenames)
 
