@@ -50,4 +50,3 @@ time.sleep(3)
 not_now_notifs = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, "//button[@class='aOOlW   HoLwm ']"))
 ).click()
-
