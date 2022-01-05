@@ -16,13 +16,13 @@ creds_file = open("ig_creds.txt", "r").readlines()
 # -------------------------------------------------- OPEN SELENIUM -------------------------------------------------------
 PATH = "C:\\Program Files (x86)\\chromedriver.exe"
 #options = Options()
-#options.add_argument("user-data-dir=C:\\Users\\hansu\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 3")
+#options.add_argument("user-data-dir=C:\\Users\\xxxxxxxxxxxxxxxxx")
 #options.add_argument("profile-directory=Profile 3")
 #driver = Chrome(executable_path=PATH, options=options)
 
 driver = Chrome(executable_path=PATH)
 
-driver.get("https://www.instagram.com/1djayo/?hl=en")
+driver.get("https://www.instagram.com/xxxxxxxxx/?hl=en")
 time.sleep(random.randint(5, 8))
 driver.find_element_by_xpath("//a[@class='sqdOP  L3NKy   y3zKF    ZIAjV ']").click()
 time.sleep(2)
@@ -67,7 +67,7 @@ time.sleep(random.randint(5, 8))
 
 
 # -------------------------------------------------- FIND ALL FOLLOWERS --------------------------------------------------
-user = 'floodonthetrack'
+user = '{user}'
 driver.get(f'https://www.instagram.com/{user}')
 user_following_href = f'/{user}/following/'
 
